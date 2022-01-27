@@ -1,0 +1,19 @@
+---
+#
+# Installing logstash
+
+# Install logstash
+
+- name: Install logstash with apt
+  apt:
+   name: logstash
+   update_cache: yes
+- name: enable logstash  service
+  command: 'systemctl enable logstash' 
+   
+# Starting Kibana
+
+- name: Starting logstash
+  service:
+   name: logstash
+   state: started

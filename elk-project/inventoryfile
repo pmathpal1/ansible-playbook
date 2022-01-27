@@ -1,0 +1,17 @@
+db_node-01 ansible_host=db_node-01 ansible_connection=ssh
+web_node-01 ansible_host=web_node-01 ansible_connection=ssh
+#ansible_ssh_pass=Covid@192021 ansible_user=ansible
+#ansible_ssh_pass=Covid@20 ansible_user=ansible
+
+elknode-01 ansible_host=elknode-01 ansible_connection=ssh
+app_node-01 ansible_host=app_node-01 ansible_connection=ssh
+#ansible_ssh_pass=Covid@20 ansible_user=ansible
+
+#dns_server=192.168.43.1
+
+[all_servers]
+web_node-01
+db_node-01
+app_node-01
+elknode-01
+~          

@@ -1,0 +1,14 @@
+---
+#
+# Playbook to install the ELK
+#
+- hosts: elknode-01
+  remote_user: ansible
+  become: true
+  roles:
+  - { role: java }
+  - { role: elasticsearch }
+  - { role: kibana }
+  - { role: logstash }
+  
+
